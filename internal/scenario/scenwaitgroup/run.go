@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func Run(length int) {
+func Run(length int) []int {
 	start := time.Now()
 
 	inputs := gen.Input(length)
@@ -35,7 +35,7 @@ func Run(length int) {
 	finishOn := time.Now().Sub(start)
 	fmt.Printf("Finish on %s\n\n", finishOn)
 
-	fmt.Printf("Result(%d) %#v\n\n", len(results), results)
+	return results
 }
 
 func worker(n time.Time, input int, res chan<- int, wg *sync.WaitGroup) {
