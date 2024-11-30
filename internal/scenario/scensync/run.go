@@ -7,10 +7,10 @@ import (
 	"time"
 )
 
-func Run() {
+func Run(length int) {
 	start := time.Now()
 
-	inputs := gen.Input(100)
+	inputs := gen.Input(length)
 	results := make([]int, len(inputs))
 
 	for i, input := range inputs {

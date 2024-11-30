@@ -1,9 +1,9 @@
 package main
 
-import (
-	"FaisalBudiono/poc-go-concurrency/internal/scenario/scensync"
-)
+import "FaisalBudiono/poc-go-concurrency/internal/scenario/scensync"
 
 func main() {
-	scensync.Run()
+	length := 1000
+
+	scensync.Run(length)
 }
