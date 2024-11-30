@@ -1,9 +1,11 @@
 package main
 
-import "FaisalBudiono/poc-go-concurrency/internal/scenario/scenwaitgroup"
+import (
+	"FaisalBudiono/poc-go-concurrency/internal/scenario/scenchannelonly"
+)
 
 func main() {
 	length := 1000
 
-	scenwaitgroup.Run(length)
+	scenchannelonly.Run(length)
 }
